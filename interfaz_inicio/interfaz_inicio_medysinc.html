@@ -5,283 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MEDISYNC</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        .portada {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-image: url('/../src/pic_portada.png'); 
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    color: white;
-}
-
-.portada-content {
-    text-align: left;
-    padding: 20px;
-}
-
-.portada h1 {
-    font-size: 3em;
-    font-weight: bold;
-}
-
-.portada p {
-    font-size: 1.5em;
-}
-
-.btn-predecir {
-    background-color: #f0c040;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1em;
-}
-
-.btn-conoce-mas {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2em;
-}
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 5%;
-            background-color: white;
-            position: fixed;
-            width: 100%;
-            z-index: 1000;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #1a365d;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: #1a365d;
-            font-weight: 500;
-        }
-
-        .predecir-btn {
-            background-color: #f6b93b;
-            color: white;
-            padding: 0.5rem 1.5rem;
-            border-radius: 25px;
-            border: none;
-            cursor: pointer;
-        }
-
-        .hero {
-            height: 100vh;
-            background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)),
-                        url('/api/placeholder/1920/1080') center/cover;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 0 5%;
-            margin-top: 4rem; /* Evita que la navbar cubra el contenido */
-        }
-
-        .scroll-down {
-            margin-top: 2rem;
-            animation: bounce 2s infinite;
-        }
-
-        .que-es {
-            padding: 5rem 5%;
-            background-color: #2c5282;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            min-height: 80vh;
-        }
-
-        .que-es-content {
-            max-width: 50%;
-        }
-
-        .que-es h2 {
-            font-size: 3rem;
-            margin-bottom: 2rem;
-        }
-
-        .que-es p {
-            font-size: 1.2rem;
-            line-height: 1.6;
-        }
-
-        .problematica {
-            display: flex;
-            min-height: 80vh;
-        }
-
-        .problematica-image {
-            width: 50%;
-            object-fit: cover;
-        }
-
-        .problematica-content {
-            width: 50%;
-            padding: 5rem;
-            background-color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .problematica h2 {
-            font-size: 3rem;
-            color: #1a365d;
-            margin-bottom: 2rem;
-        }
-
-        .problematica p {
-            font-size: 1.2rem;
-            line-height: 1.6;
-            color: #2d3748;
-        }
-
-        .doctor-image {
-            width: 40%;
-            height: auto;
-        }
-
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
-                transform: translateY(0);
-            }
-            40% {
-                transform: translateY(-30px);
-            }
-            60% {
-                transform: translateY(-15px);
-            }
-        }
-
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-
-            .que-es, .problematica {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .que-es-content, .problematica-content {
-                max-width: 100%;
-                width: 100%;
-                margin-bottom: 2rem;
-                padding: 2rem;
-            }
-
-            .problematica-image {
-                width: 100%;
-                height: 300px;
-            }
-
-            .doctor-image {
-                width: 80%;
-            }
-        }
-        .objetivo {
-            display: flex;
-            min-height: 80vh;
-            background-color: #f7fafc;
-        }
-
-        .objetivo-content {
-            width: 50%;
-            padding: 5rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .objetivo h2 {
-            font-size: 3rem;
-            color: #1a365d;
-            margin-bottom: 2rem;
-        }
-
-        .objetivo p {
-            font-size: 1.8rem;
-            line-height: 1.6;
-            color: #2d3748;
-        }
-
-        .objetivo-image {
-            width: 50%;
-            object-fit: cover;
-        }
-
-        footer {
-            background-color: #1a2942;
-            padding: 2rem;
-            color: white;
-            text-align: center;
-            border-radius: 50px;
-            margin: 2rem;
-        }
-
-        .footer-content {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 2rem;
-            background-color: white;
-            padding: 1rem 2rem;
-            border-radius: 25px;
-            color: #1a2942;
-        }
-
-        .social-link {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            color: #1a2942;
-            text-decoration: none;
-        }
-
-        #mas-info {
-            font-weight: bold;
-            margin-right: 1rem;
-        }
-
-        @media (max-width: 768px) {
-            .objetivo {
-                flex-direction: column;
-            }
-
-            .objetivo-content, .objetivo-image {
-                width: 100%;
-            }
-
-            .footer-content {
-                flex-direction: column;
-                gap: 1rem;
-            }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <section id="portada" class="portada">
@@ -313,16 +37,16 @@
             <h2>¿QUÉ ES?</h2>
             <p>Es un sistema experto médico diseñado para ayudar en la predicción de enfermedades, como la diabetes, utilizando algoritmos como la regresión lineal y logística, se dirige a usuarios y médicos con el fin de consultar, gestionar, actualizar y predecir información médica clave para mejorar la toma de decisiones en salud.</p>
         </div>
-        <img src="/../src/doctora.png/" alt="Doctor" class="doctor-image">
+        <img src="/../src/doctora.png" alt="Doctor" class="doctor-image">
     </section>
 
     <section id="problematica" class="problematica">
-        <img src="/api/placeholder/800/800" alt="Hospital" class="problematica-image">
+        
+        <img src="/../src/problematica.png" alt="Doctor" class="doctor-image">
         <div class="problematica-content">
             <h2>PROBLEMÁTICA</h2>
             <p>Actualmente, el diagnóstico temprano de enfermedades crónicas, como la diabetes, es un desafío debido a la falta de herramientas accesibles para la predicción de riesgos. Los métodos convencionales pueden ser tardíos y caros.</p>
         </div>
-        <img src="/../src/problematica.png/" alt="Doctor" class="doctor-image">
     </section>
 
     <section id="objetivo" class="objetivo">
@@ -330,7 +54,7 @@
             <h2>OBJETIVO</h2>
             <p>El objetivo de Medisync es proporcionar una herramienta accesible y confiable para predecir riesgos de salud, facilitando una gestión integral de la información médica y promoviendo la prevención y tratamiento oportuno de enfermedades crónicas.</p>
         </div>
-        <img src="/../src/objetivo.png/" alt="Objetivo" class="objetivo-image">
+        <img src="/../src/objetivo.png" alt="Objetivo" class="objetivo-image">
     </section>
 
     <footer>
@@ -343,7 +67,7 @@
                 <i class="fab fa-facebook"></i> Medysinc
             </a>
             <a href="https://www.twitter.com/medisync" class="social-link">
-                <i class="fab fa-twitter"></i> 
+                <i class="fab fa-twitter"></i> Medysinc
             </a>
         </div>
     </footer>
