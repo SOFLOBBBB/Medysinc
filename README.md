@@ -32,5 +32,5 @@ Medisync aims to streamline the process of disease prediction and health data ma
 	•	Frontend: HTML, CSS, JavaScript
 	•	Backend: PHP
 	•	Database: MySQL
-	•	Machine Learning: Python, Scikit-learn (for model training)
-	•	Other Libraries: Matplotlib, Seaborn (for data visualization)
+	•	Machine Learning: Java Scrip
+	•	Other Libraries: Simple Statics, Chart,js
