@@ -1,0 +1,155 @@
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex; /* Hacer el header un contenedor flex */
+    justify-content: space-between;
+
+    align-items: center;
+    padding: 0 10px;
+    z-index: 1000;
+
+    margin: 15px 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end; /* Alinear el menú a la derecha */
+    width: 100%; /* Ocupa todo el ancho del header */
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.boton {
+    background-color: #e6b750;
+    color: #162840;
+
+    border: none;
+    border-radius: 20px;
+
+    padding: 10px 20px;
+    margin-left: 24px; /* Espaciado entre botones */
+
+    cursor: pointer;
+
+    font-size: 16px;
+    font-weight: 575;
+    font-family: 'Hammersmith One', sans-serif;
+    transition: background-color 0.3s;
+
+    outline: none; /* Eliminar el contorno en algunos navegadores */
+    text-decoration: none;
+    
+}
+
+.boton-home{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 3px;
+}
+
+.home-img{
+    width: 50px;
+}
+
+.boton-predictor{
+    margin-left: 400px;
+}
+
+.boton:hover {
+    background-color: #ffe07e; /* Color al pasar el mouse */
+} 
+
+.notificacion {
+    position: absolute; /* Posiciona el elemento de forma absoluta */
+    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+
+    top: 0px;
+    margin-left: 20px;
+}
+
+.notificacion img {
+    width: 30px; /* Ajusta el tamaño del ícono */
+    height: auto; /* Mantiene la proporción */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+
+}
+
+.notificacion {
+    position: relative;
+    display: inline-block;
+}
+
+.notificaciones-boton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.indicador-rojo {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background: red;
+    border-radius: 50%;
+}
+
+.indicador-rojo.activo {
+    display: inline-block;
+}
+
+.barra-notificaciones {
+    position: absolute;
+    top: 50px; /* Ajusta según sea necesario */
+    right: -300px; /* Alinea con el botón */
+    width: 300px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.barra-notificaciones.ocultar {
+    display: none;
+}
+
+.notificaciones-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.cerrar-notificaciones {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.lista-notificaciones {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.lista-notificaciones li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}

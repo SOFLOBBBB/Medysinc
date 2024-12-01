@@ -1,0 +1,147 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-size: 16px;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+    margin-top: 55px;margin-top: 55px;
+}
+
+/* Banner */
+.banner {
+    background-color: #182a40;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.banner img {
+    position: absolute;
+    max-width: 50%;
+    height: auto;
+    margin-left: -640px;
+}
+
+.titulo {
+    position: absolute;
+    right: 0;
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: right;
+    margin-right: 100px;
+    z-index: 1;
+}
+
+/* Estilos para los expedientes */
+.expedientes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.hoja-evolucion {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hoja-evolucion:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.hoja-titulo {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #182a40;
+}
+
+.hoja-evolucion p {
+    font-size: 14px;
+    color: #555;
+}
+
+.btn-detalle {
+    padding: 10px 20px;
+    background-color: #182a40;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn-detalle:hover {
+    background-color: #111d2c;
+}
+
+/* Paginación */
+.paginacion {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.pagina {
+    margin: 0 10px;
+}
+
+.pagina a {
+    background-color: #e6b750;
+    color: #162840;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.pagina a:hover {
+    background-color: #ffe07e;
+}
+
+.pagina.active a {
+    background-color: #182a40;
+    color: white;
+    cursor: not-allowed;
+}
+
+.pagina.disabled a {
+    background-color: #ddd;
+    color: #888;
+    cursor: not-allowed;
+}
+
+/* Estilo para mostrar la página actual */
+.pagina-actual {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 20px;
+    align-self: center;
+}

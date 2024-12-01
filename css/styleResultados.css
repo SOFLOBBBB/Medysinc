@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    margin: 0;
+    
+    height: 100vh; 
+    background-image: url("../src/fondo-resultados.jpg"); 
+
+    background-size: cover; /* cubrir toda la página */
+    background-position: center; /* Centra imagen */
+    background-repeat: no-repeat; /* Evitaimagen repitida */
+
+    background-color: rgba(255, 255, 255, 0.849); /* transparencia */
+    background-blend-mode: overlay; /* Mezcla la imagen con el color de fondo */
+}
+
+.container {
+    display: flex;
+    border-radius: 35px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1200px;
+
+    align-items: center;
+}
+
+.info {
+    padding: 20px;
+    color: #fff;
+    width: 40%;
+    background-color: #162840;
+
+    text-align: center;
+}
+
+.anos-texto-comienzo{
+    display: flex;
+    text-align: center;
+    margin-bottom: 15px;
+
+    align-items: center;
+}
+
+.titulo-anos {
+    font-size: 24px;
+    color: #f2f2f2;
+    margin-left: 15px;
+}
+
+.anos-especificos-titulo{
+    color: #eece88;
+    font-size: 26px;
+    font-weight: 800;
+    margin-left: 20px;
+}
+
+.titulo-numeros {
+    font-size: 55px;
+    font-weight: 800;
+    margin: 0;
+    color: #e6b750;
+    margin-bottom: 15px;
+}
+
+.info p {
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.info .recommendations {
+    background-color: #b3c1d5;
+    padding: 15px;
+    border-radius: 35px;
+    margin: 20px 15px;
+}
+
+.recomendacion-texto {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    color: black;
+}
+
+.info .recommendations ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 13px;
+}
+
+.info .recommendations ul li {
+    margin-bottom: 15px;
+    color: black;
+}
+
+.chart-container {
+    padding: 20px;
+    width: 60%;
+    
+}
+
+canvas {
+    width: 100% !important;
+    height: auto !important;
+}
+
+.boton-predictor{
+    margin-right: 20px;
+}

@@ -1,0 +1,102 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh; 
+    background-image: url("../src/FondoMedicina.jpg"); 
+
+    background-size: cover; /* cubrir toda la página */
+    background-position: center; /* Centra imagen */
+    background-repeat: no-repeat; /* Evitaimagen repitida */
+
+    background-color: rgba(255, 255, 255, 0.532); /* transparencia */
+    background-blend-mode: overlay; /* Mezcla la imagen con el color de fondo */
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+/* Estilo para la página de detalles */
+.detalle-contenedor {
+    background-color: #ffffffcc;
+
+    border-radius: 50px;
+
+    width: 80%;
+    margin: 150px auto;
+    padding: 40px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.detalle-imagen {
+    max-width: 400px;
+    width: 100%;
+
+    align-content: center;
+    text-align: center;
+}
+.producto-imagen{
+    width: 80%;
+}
+
+.detalle-info {
+    max-width: 600px;
+    width: 100%;
+    padding-left: 20px;
+}
+
+.detalle-info h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.detalle-info p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.producto-precio {
+    font-size: 1.5rem;
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+.producto-status {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #17a2b8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.producto-status.no-disponible {
+    background-color: #dc3545;
+}
+
+.producto-status.disponible {
+    background-color: #28a745;
+}
+
+.volver {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.volver:hover {
+    text-decoration: underline;
+}

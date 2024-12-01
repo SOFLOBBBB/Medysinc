@@ -1,0 +1,66 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Icono de la campana de notificaciones */
+.notificacion {
+    position: relative;
+    display: inline-block;
+}
+
+.notificacion-img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Indicador de notificaciones no leídas (el botón rojo) */
+.notificacion-roja {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    display: none; /* Por defecto oculto */
+}
+
+/* Columna de notificaciones */
+.notificaciones-columna {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1000;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.notificaciones-columna .notificacion-item {
+    border-bottom: 1px solid #f0f0f0;
+    padding: 10px;
+}
+
+.notificaciones-columna .notificacion-item:last-child {
+    border-bottom: none;
+}
+
+/* Botón para cerrar la columna de notificaciones */
+.notificaciones-columna .cerrar-notificaciones {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Mostrar columna cuando se activa */
+.notificacion-activa .notificaciones-columna {
+    display: block;
+}

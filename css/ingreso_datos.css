@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-size: 16px; /* Tamaño de fuente base */
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px; /* Ancho máximo para pantallas grandes */
+    margin: 0 auto;
+    padding: 1em; /* Espacio interior */
+
+    margin-top: 55px;
+}
+
+.contenido {
+    display: flex; /* Usar flexbox para alinear contenido y gráficos */
+    justify-content: space-between; /* Espacio entre ambos */
+
+    background-color: #182a40;
+    color: #fff;
+    padding: 2em;
+   
+    text-align: left; /* Alinear a la izquierda para mejor presentación */
+    
+    width: 100%;
+    height: auto; /* Permitir que la altura se ajuste automáticamente */
+    max-height: 400px; /* Establecer una altura máxima */
+    overflow: auto; /* Añadir scroll si el contenido es demasiado grande */
+
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+}
+
+.texto-contenido {
+    width: 50%; /* Ocupa la mitad del contenedor */
+    padding-right: 20px; /* Espacio entre el texto y la gráfica */
+    text-align: center;
+}
+
+.graficas {
+    width: 50%; /* Ocupa la otra mitad del contenedor */
+    display: flex;
+    align-items: center; /* Alinear gráficas a la derecha */
+    background-color: #122030;
+
+    border-radius: 25px;
+}
+
+.contenido h1 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.introduce {
+    color: #abbac6;
+    font-size: 1.0em;
+    font-weight: bold;
+}
+
+.nota-numerico {
+    color: #d7dce0;
+    font-size: 10px;
+    font-weight: 900;
+    text-align: center;
+    font-weight: bold;
+}
+
+.sabias-que { 
+    position: relative; /* Necesario para el pseudo-elemento */
+    color: #1b2a4e;
+
+    text-align: center;
+    height: 300px;
+
+    overflow: hidden; /* Evitar que el contenido sobresalga */
+
+    align-content: center;    
+
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+.imagen-inferior{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor */
+    opacity: 0.5; /* Transparencia */
+    z-index: -1;
+}
+
+.sabias-que, h2, p, button {
+    position: relative; /* Posicionar el texto por encima del pseudo-elemento */
+    z-index: 1; /* Traer al frente */
+}
+
+form {
+    display: flex;
+    align-items: center;
+    background-color: white; /* Color de fondo del formulario */
+    padding: 5px;
+    border-radius: 50px;
+    width: 100%; /* Hacer que ocupe el ancho completo del contenedor */
+    max-width: 500px; /* Ancho máximo del formulario */
+}
+
+input[type="number"] {
+    border: none;
+    background-color: #f2f4f7;
+    padding: 10px;
+    border-radius: 25px 0 0 25px;
+    font-size: 20px;
+    color: #495057;
+    width: 100%; /* Ajustar el ancho al 100% del contenedor */
+    outline: none;
+}
+
+input[type="number"]::placeholder {
+    color: #adb5bd;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center; /* Centrar el formulario horizontalmente */
+    width: 100%; /* Asegúrate de que ocupe el ancho completo */
+    margin-top: 20px; /* Espacio opcional arriba del formulario */
+}

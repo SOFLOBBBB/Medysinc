@@ -1,0 +1,167 @@
+/* Estilo para el body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.boton-predictor{
+    margin-right: 30px;
+}
+
+/* Estilo para el contenedor principal */
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+    margin-top: 60px;
+
+}
+
+/* Estilo para el header y nav que fueron convertidos en div */
+.header {
+    background-color: #182a40;
+    color: white;
+    padding: 20px;
+    text-align: center;
+
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.header h1 {
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 36px;
+}
+
+.header h2 {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.nav-agenda {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.nav-agenda a {
+    color: #e6b750;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.nav-agenda a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para la tabla del calendario */
+.calendario {
+    width: 70%;
+}
+
+.calendario table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calendario th, .calendario td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #007bff; /* Líneas azules */
+}
+
+.calendario th {
+    background-color: #182a40;
+    color: white;
+    font-weight: normal;
+}
+
+.calendario td {
+    vertical-align: top;
+    background-color: #f9f9f9;
+}
+
+.calendario td:hover {
+    background-color: #e6f0ff;
+}
+
+.calendario td strong {
+    font-size: 16px;
+    color: #182a40;
+}
+
+/* Estilo para las notas en los días */
+.nota {
+    margin-top: 5px;
+    background-color: #e6f0ff;
+    padding: 8px;
+    border: 1px solid #007bff; /* Borde azul para las notas */
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.boton-eliminar {
+    color: white;
+    background-color: #ff4d4d;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.boton-eliminar:hover {
+    background-color: #cc0000;
+}
+
+/* Estilo para el formulario */
+.formulario {
+    width: 28%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+}
+
+/* Diseño flex para el calendario y formulario */
+.agenda-contenido {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Estilo para los campos del formulario */
+.formulario input,
+.formulario textarea,
+.formulario button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.formulario input[type="date"],
+.formulario input[type="time"] {
+    font-size: 16px;
+}
+
+.formulario button {
+    background-color: #e6b750;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.formulario button:hover {
+    background-color: #c9973d;
+}

@@ -1,0 +1,109 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+
+    height: 100%; 
+    background-image: url("../src/corazon_fondo.jpg"); 
+
+    background-size: cover; /* cubrir toda la página */
+    background-position: center; /* Centra imagen */
+    background-repeat: no-repeat; /* Evitaimagen repitida */
+
+    background-color: rgba(255, 255, 255, 0.701); /* transparencia */
+    background-blend-mode: overlay; /* Mezcla la imagen con el color de fondo */
+
+    font-family: 'Poppins', sans-serif;
+}
+
+.boton-predictor{
+    margin-right: 30px;
+}
+
+.main-content{
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_titulo {
+    text-align: center;
+    margin: 0 auto 0;
+    padding: 85px 20px 30px;
+    background-color: #182a40;
+    color: white;
+    width: 700px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.header_titulo h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.recommendations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    padding: 30px;
+    max-width: 1200px;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+/* Individual card */
+.card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    overflow: hidden;
+
+    text-align: center;
+}
+
+.card h2 {
+    font-size: 1.7rem;
+    color: #182a40;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 1.4rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 0 0 15px 15px;
+}
+
+/* Hover effect */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .card h2 {
+        font-size: 1.3rem;
+    }
+
+    .card p {
+        font-size: 1rem;
+    }
+}

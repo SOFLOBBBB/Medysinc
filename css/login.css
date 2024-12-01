@@ -1,0 +1,100 @@
+/* Estilo general */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Logo */
+.logo img {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+/* Títulos */
+h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Etiquetas */
+label {
+    text-align: left;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Campos de entrada */
+input[type="email"], input[type="password"] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+}
+
+/* Botón */
+.boton {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton:hover {
+    background-color: #0056b3;
+}
+
+/* Mensajes de error */
+#error {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.success {
+    color: green;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Estilo de la alerta de error */
+#error {
+    background-color: #f8d7da;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.error {
+    color: #721c24;
+}
